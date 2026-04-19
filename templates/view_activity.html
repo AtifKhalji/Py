@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Activity Records</title>
+
+<style>
+body {
+  margin:0;
+  font-family:Arial;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b');
+  background-size:cover;
+  background-position:center;
+  color:white;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 80px;
+}
+
+table {
+  position: absolute;
+  top: 120px;
+  right: 80px;
+  margin-top: 25px;
+
+  background: rgba(0, 0, 0, 0.168);
+  padding: 20px;
+  border-radius: 12px;
+
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<h2>📘 Activity Records</h2>
+
+<table border="1">
+<tr>
+<th>ID</th><th>Name</th><th>Activity</th><th>Date</th>
+</tr>
+
+{% for row in data %}
+<tr>
+<td>{{row[0]}}</td>
+<td>{{row[1]}}</td>
+<td>{{row[2]}}</td>
+<td>{{row[3]}}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>

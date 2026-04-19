@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Activity</title>
+
+<style>
+body {
+  margin:0;
+  font-family:Arial;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');
+  background-size:cover;
+  background-position:center;
+  color:white;
+  text-align:right;
+  padding-right: 80px;
+}
+
+form {
+  margin: top 40px;
+  background: rgba(0, 0, 0, 0.053);
+  display:inline-block;
+  padding:30px;
+  border-radius:10px;
+}
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  padding: 8px;
+  outline: none;
+  width: 220px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>📅 Add Activity</h2>
+
+<form method="post">
+  <input type="text" name="name" placeholder="Enter Name" required><br><br>
+  <input type="text" name="activity" placeholder="Enter Activity" required><br><br>
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
